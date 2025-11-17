@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Net Segmentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>U-Net Image Denoising</h1>
+
+  <div class="upload-area" id="uploadArea">
+    <p>Drag & Drop your image here or click to browse</p>
+    <input type="file" id="fileInput" accept="image/*" hidden>
+  </div>
+
+  <div class="preview" id="preview"></div>
+
+  <button id="runBtn">Run Image Denoising</button>
+  <div class="loader" id="loader"></div>
+
+  <div class="result" id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

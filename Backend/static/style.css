@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.upload-area {
+  border: 2px dashed #4fc3f7;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  width: 70%;
+  max-width: 600px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.upload-area:hover {
+  background: rgba(79, 195, 247, 0.1);
+  transform: scale(1.02);
+}
+
+.preview {
+  margin-top: 20px;
+}
+
+.preview img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background: #4fc3f7;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #039be5;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.result img {
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.loader {
+  display: none;
+  margin-top: 20px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4fc3f7;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
