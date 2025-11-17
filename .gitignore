@@ -206,7 +206,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# --- ML / Data Science additions ---
+# ML / Data Science additions
 data/
 results/
 *.npz
