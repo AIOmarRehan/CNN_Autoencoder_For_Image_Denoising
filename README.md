@@ -1,6 +1,10 @@
 [If you would like a detailed explanation of this project, please refer to the Medium article below.](https://medium.com/@ai.omar.rehan/a-u-net-based-cnn-autoencoder-for-cleaning-noisy-images-before-classification-132e27b828e2)
 
 ---
+
+[The Project is also available for testing on Hugging Face.](https://huggingface.co/spaces/AIOmarRehan/CNN_Autoencoder_For_Image_Denoising)
+
+---
 # A U-Net–Based CNN Autoencoder for Cleaning Noisy Images Before Classification
 
 A practical walkthrough of how I built and trained a deep-learning model to denoise images and boost classification performance.
