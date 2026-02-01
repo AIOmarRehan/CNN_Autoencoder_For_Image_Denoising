@@ -28,7 +28,7 @@ This article walks you through:
 
 ---
 
-## 🔧 1. Setting Up the Environment
+## 1. Setting Up the Environment
 
 I started by loading the usual deep-learning stack:
 
