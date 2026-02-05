@@ -9,7 +9,7 @@
 
 A practical walkthrough of how I built and trained a deep-learning model to denoise images and boost classification performance.
 
-When I first started working with image-classification tasks, I noticed something that kept hurting my models: **noise**. Even small distortions—random dots, compression artifacts, sensor noise—were enough to confuse the classifier.
+When I first started working with image-classification tasks, I noticed something that kept hurting my models: **noise**. Even small distortions, random dots, compression artifacts, sensor noise, were enough to confuse the classifier.
 
 The obvious solution was to train on noisy data… but that never felt elegant. Instead, I wanted a **preprocessing model** whose sole job is to take a noisy image and return a clean version of it. The classifier would then work on much better input.
 
@@ -46,7 +46,7 @@ This is the typical setup for building custom architectures using Keras.
 
 ## 2. Why a U-Net Autoencoder?
 
-A normal autoencoder compresses an image into a bottleneck and then reconstructs it. It works—but often loses details.
+A normal autoencoder compresses an image into a bottleneck and then reconstructs it. It works, but often loses details.
 
 A **U-Net**, however, uses **skip connections**, meaning it:
 
@@ -162,13 +162,13 @@ After training, I checked:
 * autoencoder output
 * original clean image
 
-The model consistently removed a large amount of noise, smoothing textures while preserving structure. Not perfect—but for MNIST and a lightweight U-Net, the results were very encouraging.
+The model consistently removed a large amount of noise, smoothing textures while preserving structure. Not perfect, but for MNIST and a lightweight U-Net, the results were very encouraging.
 
 ---
 
 ## 7. Why This Helps Classification
 
-If you already have (or plan to build) a classifier—CNN, ResNet, etc.—you can use a pipeline like:
+If you already have (or plan to build) a classifier-CNN, ResNet, etc. You can use a pipeline like:
 
 ```
 Noisy Image → Autoencoder (denoising) → Classifier → Prediction
@@ -194,7 +194,7 @@ This helps with real-world noise sources like:
 - The approach **scales to any image dataset**.
 
 
-This approach is not just theoretical—it’s extremely practical.
+This approach is not just theoretical, it’s extremely practical.
 Any project involving real-world noisy data can benefit from this denoising layer.
 
 ---
