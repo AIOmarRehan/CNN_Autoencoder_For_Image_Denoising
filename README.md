@@ -2,7 +2,7 @@
 
 ---
 
-[The project is also available for testing on Hugging Face.](https://huggingface.co/spaces/AIOmarRehan/CNN_Autoencoder_For_Image_Denoising)
+[The project is also available for testing on Hugging Face.](https://huggingface.co/spaces/AIOmarRehan/Animal_Image_Classification_Using_InceptionV3)
 
 ---
 # A U-Net–Based CNN Autoencoder for Cleaning Noisy Images Before Classification
